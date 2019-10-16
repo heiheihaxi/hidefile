@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>文件隐藏</title>
+    <meta charset="utf-8">
+    <script src="js/upload.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+
+</head>
+
+<body onload="init();">
+<div class="row">
+    <label for="fileToUpload">请选择需要上传的文件</label>
+    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelected();" multiple/>
+</div>
+
+<div id="fileFrame"></div>
+
+
+<div class="row">
+    <button onclick="uploadFiles()" id="upLoad">上传</button>
+    <button onclick="pauseUpload()" id="pause">暂停</button>
+    <button onclick="clearFiles()" id="clear">清除所选文件</button>
+    &nbsp;<label id="progressNumber"></label>
+</div>
+<div id="msg" style="max-height: 400px; overflow:auto;min-height: 100px;">
+</div>
+<br>
+<div><h6>嘿嘿哈嘻</h6></div>
+</body>
+</html>
